@@ -1,0 +1,121 @@
+
+*
+{
+	margin:0;
+	text-decoration:none;
+	list-style:none;
+	padding:0px;
+	perspective:150;
+	font-family: 'Raleway', sans-serif;
+}
+
+
+header
+{
+	height:100px;
+	width:100%;
+	background-color:#020202;
+	padding-top:20px;
+	position:fixed;
+}
+
+nav
+{
+	width:100%;
+	height:40px;
+	background-color:#003604;
+	margin-top:80px;
+	box-shadow:2px 10px 20px;
+}
+.outline
+{
+	
+	width:100px;
+	height:30px;
+	background-color:#D8EAF8;
+	border-radius:12px;
+	margin-left:20px;
+	padding:5px;
+}
+
+nav > ul > li
+{
+	float:left;
+	margin-right:100px;
+	margin-top:10px;
+	text-align:center;
+	
+}
+nav > ul > li > ul
+{
+	display:none;
+	width:120px;
+	background-color:#003604;
+	
+	border-radius:10px;
+	padding-top:10px;
+	padding-bottom:10px;
+	animation-name:bounce;
+	animation-duration:2s;
+	
+	animation-iteration-count:1;
+	animation-fill-mode: forwards;
+	position:relative;
+	animation-transition:3s;
+	
+	
+	
+}
+
+@keyframes bounce
+{
+	
+	to{transform:scale(1.08,1.07) translateY(40px) ;
+		box-shadow:5px 14px 25px #061142;
+		
+		
+		}
+	
+}
+nav > ul > li > ul >li
+{
+	padding-top:10px;
+	margin:10px;
+	background-color:grey;
+	width:90px;
+	border-radius:2px;
+	
+}
+
+
+nav > ul > li:hover > ul
+{
+	display:block;
+	
+	
+}
+
+#container
+{
+	width:100%;
+	height:900px;
+	background-color:#908B91;
+	padding-top:200px;
+}
+#container > p
+{
+	 margin:50px;
+}
+
+
+
+#footer
+{
+	width:100%;
+	height:60px;
+	background-color:#363638;
+	border-radius:px;
+	position:fixed;
+	top:950px;
+	box-shadow:2px -11px 23px;
+}
